@@ -1,4 +1,5 @@
-    [    {
+    [
+        {
             "id": "cintas",
             "img": "./assets/productos/home_cinta_transportadora.jpg",
             "descripcion": {
@@ -35,6 +36,11 @@
                         ]
                     }
                 ]
+            },
+            "especialista": {
+                "nombre": "Liliana Monaco",
+                "email": "+54 341-3752721",
+                "tel": "lmonaco@kussmaul.com.ar"
             }
         },
         {
@@ -153,6 +159,11 @@
                         ]
                     }
                 ]
+            },
+            "especialista": {
+                "nombre": "Walter Vicario",
+                "email": "+54 341-5311215",
+                "tel": "wvicario@kussmaul.com.ar"
             }
         },
         {
@@ -217,6 +228,11 @@
                         ]
                     }
                 ]
+            },
+            "especialista": {
+                "nombre": "Salome Rigato",
+                "email": "+54 3416575708",
+                "tel": "srigato@kussmaul.com.ar"
             }
         },
         {
@@ -263,6 +279,11 @@
                         ]
                     }
                 ]
+            },
+            "especialista": {
+                "nombre": "Marta Fraile",
+                "email": "+54 341-6575713",
+                "tel": "mfraile@kussmaul.com.ar"
             }
         }
-]
+    ]

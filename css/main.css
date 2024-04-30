@@ -11,7 +11,7 @@
     --color-secondary: #EDF25E;
     --color-bg-primary: #403C01;
     --color-bg-secondary: #8C8303;
-    --gray:#848486;
+    --gray: #848486;
     --dark: #1C140E;
     --light: #FFFFFF;
     --sections-bg: rgba(237, 242, 94, 0.3);
@@ -94,6 +94,7 @@ section {
     margin-bottom: 0;
     color: #6f6f6f;
 }
+
 .section-header span {
     font-weight: bold;
 }
@@ -236,10 +237,11 @@ section {
 }
 
 @media (max-width: 992px) {
-    #mision-img{
+    #mision-img {
         display: none !important;
     }
 }
+
 /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -597,7 +599,7 @@ section {
         background: var(--color-bg-secondary);
         z-index: 9996;
     }
-    
+
 }
 
 
@@ -606,10 +608,10 @@ section {
   # About Us Section
   --------------------------------------------------------------*/
 #main {
-   background-color: rgba(73, 72, 72, 0.123) !important;
+    background-color: rgba(73, 72, 72, 0.123) !important;
 }
 
-  .about h3 {
+.about h3 {
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 20px;
@@ -666,13 +668,13 @@ section {
   # Clients Section
   --------------------------------------------------------------*/
 
-  .clients {
+.clients {
     padding: 40px 0;
     overflow: hidden;
 }
 
-.swiper-wrapper{
-    height:60px !important;
+.swiper-wrapper {
+    height: 60px !important;
 }
 
 .clients .swiper {
@@ -712,19 +714,23 @@ section {
     background-image: url(/assets/img/productos/home_cinta_transportadora.jpg);
 }
 
-.services #seg-ind{
+.services #seg-ind {
     background: url(/assets/img/productos/seguridad.jpg);
 }
-.services #correas{
+
+.services #correas {
     background: url(/assets/img/productos/home_correas.jpg);
 }
-.services #mangueras{
+
+.services #mangueras {
     background: url(/assets/img/productos/home_magueras.jpg);
 }
-.services #emp-vul{
+
+.services #emp-vul {
     background: url(/assets/img/productos/home_vulcanizado.jpg);
 }
-.services #kapher{
+
+.services #kapher {
     background: url(/assets/img/Clientes/kapher.jpg);
 }
 
@@ -795,7 +801,7 @@ section {
 /*--------------------------------------------------------------
   # Our Team Section
   --------------------------------------------------------------*/
-.team  .member {
+.team .member {
     text-align: center;
     background: #fff;
     border-radius: 10px;
@@ -1047,16 +1053,18 @@ section {
     color: var(--light);
 
 }
-.hero h2 span {   
+
+.hero h2 span {
     color: var(--color-primary);
 }
+
 .hero p {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
     margin-bottom: 30px;
 }
 
-.hero #greet{
+.hero #greet {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1133,7 +1141,7 @@ section {
     padding: 60px 30px;
     position: relative;
     overflow: hidden;
-    background: rgba(237, 242, 94, 0.8)    ;
+    background: rgba(237, 242, 94, 0.8);
     box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
@@ -1300,129 +1308,130 @@ section {
     padding: 20px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.12);
     background-color: white;
-  }
-  
-  .service-details .service-box+.service-box {
+}
+
+.service-details .service-box+.service-box {
     margin-top: 30px;
-  }
-  
-  .service-details .service-box h4 {
+}
+
+.service-details .service-box h4 {
     font-size: 20px;
     font-weight: 700;
-    border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
+    border-bottom: 2px solid rgba(var(--light), 0.08);
     padding-bottom: 15px;
     margin-bottom: 15px;
-  }
-  
-  .service-details .services-list button {
-    color: rgba(var(--default-color-rgb), 0.8);
-    background-color: rgba(var(--default-color-rgb), 0.04);
+}
+
+.service-details .services-list button {
+    color: rgba(var(--dark), 0.8);
+    background-color: rgba(var(--light), 0.04);
     display: flex;
     align-items: center;
     padding: 12px 15px;
     margin-top: 15px;
     transition: 0.3s;
-    border: none;
-  }
-  
-  .service-details .services-list button:first-child {
+    
+}
+
+.service-details .services-list button:first-child {
     margin-top: 0;
-  }
-  
-  .service-details .services-list button i {
+}
+
+.service-details .services-list button i {
     font-size: 16px;
     margin-right: 8px;
-    color: var(--accent-color);
-  }
-  
-  .service-details .services-list button.active {
-    color: var(--contrast-color);
-    background-color: var(--accent-color);
-  }
-  
-  .service-details .services-list button.active i {
-    color: var(--contrast-color);
-  }
-  
-  .service-details .services-list button:hover {
+    color: var(--dark);
+}
+
+.service-details .services-list button.active {
+    color: var(--light);
+    background-color: rgba(rgba(237, 242, 94, 0.3), 0.05);;
+}
+
+.service-details .services-list button.active i {
+    color: var(--light);
+}
+/*
+.service-details .services-list button:hover {
     background-color: rgba(var(--accent-color-rgb), 0.05);
     color: var(--accent-color);
-  }
-  
-  .service-details .download-catalog a {
+}
+*/
+.service-details .download-catalog a {
     color: var(--default-color);
     display: flex;
     align-items: center;
     padding: 10px 0;
     transition: 0.3s;
     border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
-  }
-  
-  .service-details .download-catalog a:first-child {
+}
+
+.service-details .download-catalog a:first-child {
     border-top: 0;
     padding-top: 0;
-  }
-  
-  .service-details .download-catalog a:last-child {
+}
+
+.service-details .download-catalog a:last-child {
     padding-bottom: 0;
-  }
-  
-  .service-details .download-catalog a i {
+}
+
+.service-details .download-catalog a i {
     font-size: 24px;
     margin-right: 8px;
     color: var(--accent-color);
-  }
-  
-  .service-details .download-catalog a:hover {
+}
+
+.service-details .download-catalog a:hover {
     color: var(--accent-color);
-  }
-  
-  .service-details .help-box {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+}
+
+.service-details .help-box {
+    background-color: var(--light);
+    color: var(--dark);
     margin-top: 30px;
     padding: 30px 15px;
-  }
-  
-  .service-details .help-box .help-icon {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-details .help-box .help-icon {
     font-size: 48px;
-  }
-  
-  .service-details .help-box h4,
-  .service-details .help-box a {
+}
+
+.service-details .help-box h4,
+.service-details .help-box a {
     color: var(--contrast-color);
-  }
-  
-  .service-details .services-img {
+}
+
+.service-details .services-img {
     margin-bottom: 20px;
-  }
-  
-  .service-details h3 {
+}
+
+.service-details h3 {
     font-size: 26px;
     font-weight: 700;
-  }
-  
-  .service-details p {
+}
+
+.service-details p {
     font-size: 15px;
-  }
-  
-  .service-details ul {
+}
+
+.service-details ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
-  }
-  
-  .service-details ul li {
+}
+
+.service-details ul li {
     padding: 5px 0;
     display: flex;
     align-items: center;
-  }
-  
-  .service-details ul i {
+}
+
+.service-details ul i {
     font-size: 20px;
     margin-right: 8px;
     color: var(--accent-color);
-  }
+}
 
 
 /*--------------------------------------------------------------
@@ -1431,40 +1440,40 @@ section {
 .page-title {
     color: var(--default-color);
     background-color: var(--background-color);
-  }
-  
-  .page-title .heading {
+}
+
+.page-title .heading {
     padding: 60px 0;
     border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
-  }
-  
-  .page-title .heading h1 {
+}
+
+.page-title .heading h1 {
     font-size: 38px;
     font-weight: 700;
     color: var(--heading-color);
-  }
-  
-  .page-title nav {
+}
+
+.page-title nav {
     background-color: rgba(var(--sections-bg), 0.05);
     padding: 25px 0;
-  }
-  
-  .page-title nav ol {
+}
+
+.page-title nav ol {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     font-size: 16px;
     font-weight: 600;
-  }
-  
-  .page-title nav ol li+li {
+}
+
+.page-title nav ol li+li {
     padding-left: 10px;
-  }
-  
-  .page-title nav ol li+li::before {
+}
+
+.page-title nav ol li+li::before {
     content: "/";
     display: inline-block;
     padding-right: 10px;
     color: rgba(var(--default-color-rgb), 0.3);
-  }
+}
