@@ -1,0 +1,268 @@
+    [    {
+            "id": "cintas",
+            "img": "./assets/productos/home_cinta_transportadora.jpg",
+            "descripcion": {
+                "titulo": "CINTAS TRANSPORTADORAS",
+                "marcas": "Dunlop Argentina, Continental y Kapher ConveyorBelt, marcas líderes en el mercado.",
+                "secciones": [
+                    {
+                        "titulo": "DISTRIBUIMOS CINTAS TRANSPORTADORAS PARA LAS DIFERENTES INDUSTRIAS",
+                        "contenido": [
+                            "Actividades abrasivas (Mineria, Cementeras, Siderurgia)",
+                            "Actividades agropecuarias, agroindustria y portuaria (Resistentes a los aceites, Ignifuga y antiestáticas)",
+                            "Actividades de transporte liviano(Grifer, corrugado y diamantada)",
+                            "Actividades alimenticias (Sanitarias para frigoríficos y transporte de alimentos)",
+                            "Correas para rotoenfardadoras",
+                            "Para plantas de fertilizantes",
+                            "Para fundiciones (Granalladoras)"
+                        ]
+                    },
+                    {
+                        "titulo": "SERVICIOS",
+                        "contenido": [
+                            "Empalmes en planta o en el taller, ya sea en frio o caliente.",
+                            "Reparaciones."
+                        ]
+                    },
+                    {
+                        "titulo": "ELEMENTOS COMPLEMENTARIOS",
+                        "contenido": [
+                            "Canjilones plásticos de alta performance",
+                            "Bulones de fijación",
+                            "Cemento de doble contacto para vulcanizaciones de cintas en frio.",
+                            "Grampas y broches para unir cintas",
+                            "Broches para rotoenfardadoras (K430)"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "seguridad",
+            "descripcion": {
+                "titulo": "SEGURIDAD INDUSTRIAL",
+                "marcas": "3M, MSA, Boris, Caran, Fravida, Ombu, Geo, Pampero, Calfort.",
+                "secciones": [
+                    {
+                        "titulo": "PROTECCION AUDITIVA",
+                        "contenido": [
+                            "3M (endoaural, copa)",
+                            "MSA (Copa xls vincha y xls casco)",
+                            "STEELPRO (Endoaural tres aletas y copa samurái)",
+                            "FRAVIDA (copa)"
+                        ]
+                    },
+                    {
+                        "titulo": "PROTECCION CABEZA Y FACIAL",
+                        "contenido": [
+                            "3M Casco H 700 (arnes simple y a cremallera)",
+                            "MSA Casco V-gard, protección facial, mentoneras, casco de bomberos",
+                            "SAYLENS Magnun"
+                        ]
+                    },
+                    {
+                        "titulo": "PROTECCION RESPIRATORIA",
+                        "contenido": [
+                            "3M reutilizable, semimascara línea 6000 y 7000, Full Face, cartuchos descartables",
+                            "MSA Reutilizable, semimascara adventage 200 y 420, mascara adventage 3000 y 4000, cartuchos y filtros.",
+                            "STEELPRO descartables, partículas",
+                            "FRAVIDA reutilizable Confos 2, cartuchos, partículas"
+                        ]
+                    },
+                    {
+                        "titulo": "PROTECCION DE MANOS",
+                        "contenido": [
+                            "DE PASCALE, línea cuero, sistetico, descatable",
+                            "LEMBU, sintetica",
+                            "GAMISOL, guantes tejidos",
+                            "GLOVEX guantes dieléctricos",
+                            "TOYSA, línea PVC"
+                        ]
+                    },
+                    {
+                        "titulo": "PROTECCION ALTURA",
+                        "contenido": [
+                            "CARAN , arneses, conectores, equipos especiales",
+                            "MSA , arneses, conectores, equipos especiales"
+                        ]
+                    },
+                    {
+                        "titulo": "PROTECCION OJOS",
+                        "contenido": [
+                            "MSA, Anteojos Sierra E, Maverick, Ecoligth, luxor",
+                            "3M Anteojos I920, virtual",
+                            "UCU Anteojos 111B, 112B, 091B, 092 B",
+                            "MSA Antiparra Altimer, Dualfit, Flexifold 240, GH 3000",
+                            "STEELPRO Everest",
+                            "Duchas lavaojos"
+                        ]
+                    },
+                    {
+                        "titulo": "INDUMENTARIA",
+                        "contenido": [
+                            "Ropa Pampero( camisa, pantalon, pantalon cargo, bombacha)",
+                            "Ropa Ombu (camisa, pantalón)",
+                            "Ropa Explora (pantalón cargo, bombacha lisa)",
+                            "Camperas Truker",
+                            "Mamelucos ( descartables )",
+                            "Mamelucos (Tybek de Dupont)",
+                            "Mamelucos ( 3 M 4520 respirable,4565 doble sellado)"
+                        ]
+                    },
+                    {
+                        "titulo": "CALZADOS",
+                        "contenido": [
+                            "BORIS (zapatos, botines, bota petrolera)",
+                            "PAMPERO (Botines)",
+                            "FIRESTONE (Botines, zapatos)",
+                            "CASTOR GEO (Botines, zapatos)",
+                            "OMBU (zapatillas, botines, zapatos, zapatillas aire libre, botas de lluvia)",
+                            "CALFORT ( botas pampeanas, Lady Boot)"
+                        ]
+                    },
+                    {
+                        "titulo": "CONTRA INCENDIOS",
+                        "contenido": [
+                            "Mangueras ( RYLJET, con unions- ARMTEX con uniones)",
+                            "Lanzas (metálicas, Viper)",
+                            "Valvulas (tipo teatro)",
+                            "Reducciones",
+                            "Repuestos",
+                            "Trajes de bomberos",
+                            "Extintores portátiles abc",
+                            "Equipos autónomos"
+                        ]
+                    },
+                    {
+                        "titulo": "PRIMEROS AUXILIOS",
+                        "contenido": [
+                            "Botiquines",
+                            "Tablas espinales",
+                            "Camillas plegables",
+                            "Gabinetes"
+                        ]
+                    },
+                    {
+                        "titulo": "OTROS ARTICULOS",
+                        "contenido": [
+                            "Conos ( con base de goma, base rellenable, premiun con memoria)",
+                            "Cadenas (roja y blanca ; amarilla y negra)",
+                            "Banderas (Roja y blanca)",
+                            "Cintas (laminadas de peligro)",
+                            "Mallas (naranja)"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "otros",
+            "descripcion": {
+                "titulo": "PRODUCTOS GENERALES",
+                "marcas": "Continental, Dayco, Diemer, Dunlop Argentina, Gates, Lockhart, Optibelt.",
+                "secciones": [
+                    {
+                        "titulo": "CORREAS",
+                        "contenido": [
+                            "Correas en V, agrícolas, industriales y para automotores",
+                            "Correas planas",
+                            "Correas para desmalezadoras",
+                            "Correas de perfiles especiales",
+                            "Correas Power band"
+                        ]
+                    },
+                    {
+                        "titulo": "MANGUERAS",
+                        "contenido": [
+                            "Uso industrial ( agua, aire, aceites, areneras,hidráulicas,petróleo, neumáticas, vapor)",
+                            "Uso domestico (riego)",
+                            "Sanitarias para alimentos",
+                            "Soldaduras ( solda dupla)",
+                            "Fumigación",
+                            "Caños pileteros",
+                            "Mangueras surtidor",
+                            "Mangas de PVC para desagote",
+                            "Caños de PVC (para el transporte de agua, aceite, )"
+                        ]
+                    },
+                    {
+                        "titulo": "POLEAS",
+                        "contenido": [
+                            "De fundición y canales simples o multiples, en todas las secciones. Poleas escalonadas, tensoras, sincronicas y roldanas."
+                        ]
+                    },
+                    {
+                        "titulo": "TERMOPLASTICOS SEMIELABORADOS",
+                        "contenido": [
+                            "Planchas, barras, bujes, ruedas de polietileno, APM, grilon, polipropileno, Teflón, Mylacast.",
+                            "Piezas elaboradas en APM, correas NIT POL, monofilamento para bordeadoras."
+                        ]
+                    },
+                    {
+                        "titulo": "ACCESORIOS DE USO AGRICOLA",
+                        "contenido": [
+                            "Polietileno agrícola.",
+                            "Media sombra.",
+                            "Ventanitas para mangas de polietileno",
+                            "Conectores para mangas de polietileno para el transporte de agua"
+                        ]
+                    },
+                    {
+                        "titulo": "PRODUCTOS VARIOS",
+                        "contenido": [
+                            "Goma en planchas",
+                            "Burletes de goma",
+                            "Cajones dosificadores para siembra y fertilización",
+                            "Caños aspirapolvo"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "khapler",
+            "descripcion": {
+                "titulo": "PRODUCTOS KAPHER",
+                "marcas": "Fabricacion propia.",
+                "secciones": [
+                    {
+                        "titulo": "",
+                        "contenido": [
+                            "Planchas de poliuretano con base textil o placas con material desplegable",
+                            "En azul para deslizamiento de los materiales y el rojo para zonas de impacto"
+                        ]
+                    },
+                    {
+                        "titulo": "KAPHER AGRICOLA",
+                        "contenido": [
+                            "Para el recubrimiento de las partes mas atacadas por la abrasión del cereal en la maquinaria agrícola (fondos de tolva, codos, tubos de descarga)"
+                        ]
+                    },
+                    {
+                        "titulo": "KAPHER INDUSTRIAL",
+                        "contenido": [
+                            "Utilizado por los usuarios necesitados de resistir a la abrasión del paso del cereal en plantas industriales (ciclones, cabezales de noria, tubos de bajadas). En la minería es utilizado en recubrimiento de los elementos mas atacados por la abrasión."
+                        ]
+                    },
+                    {
+                        "titulo": "RASCADORES",
+                        "contenido": [
+                            "Para cintas transportadoras con uñas de poliuretano"
+                        ]
+                    },
+                    {
+                        "titulo": "BUJES",
+                        "contenido": [
+                            "Para distintos usos en poliuretano"
+                        ]
+                    },
+                    {
+                        "titulo": "CANGILONES",
+                        "contenido": [
+                            "De alta performance"
+                        ]
+                    }
+                ]
+            }
+        }
+]

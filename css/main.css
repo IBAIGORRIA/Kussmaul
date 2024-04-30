@@ -14,6 +14,7 @@
     --gray:#848486;
     --dark: #1C140E;
     --light: #FFFFFF;
+    --sections-bg: rgba(237, 242, 94, 0.3);
 }
 
 /* Smooth scroll behavior */
@@ -60,8 +61,7 @@ section {
 }
 
 .sections-bg {
-    background-color: rgba(237, 242, 94, 0.3)
-    ;
+    background-color: var(--sections-bg);
 }
 
 .section-header {
@@ -606,7 +606,7 @@ section {
   # About Us Section
   --------------------------------------------------------------*/
 #main {
-    background-color: rgba(73, 72, 72, 0.123) !important;
+   background-color: rgba(73, 72, 72, 0.123) !important;
 }
 
   .about h3 {
@@ -1030,7 +1030,7 @@ section {
     width: 100%;
     position: relative;
     background: url(/assets/img/slider/slide1.jpg);
-    padding: 60px 0 0 0;
+    padding: 60px 0 0px 0;
 
 }
 
@@ -1112,7 +1112,10 @@ section {
 
 .hero .icon-boxes {
     padding-bottom: 60px;
+
 }
+
+
 
 @media (min-width: 1200px) {
     .hero .icon-boxes:before {
@@ -1122,7 +1125,7 @@ section {
         left: 0;
         right: 0;
         height: calc(50% + 20px);
-        background-color: #fff;
+        background-color: transparent;
     }
 }
 
@@ -1287,3 +1290,181 @@ section {
 .footer .credits a {
     color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Services Details Page
+--------------------------------------------------------------*/
+/* Service-details Section - Services Details Page
+------------------------------*/
+.service-details .service-box {
+    padding: 20px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.12);
+    background-color: white;
+  }
+  
+  .service-details .service-box+.service-box {
+    margin-top: 30px;
+  }
+  
+  .service-details .service-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(var(--default-color-rgb), 0.08);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .service-details .services-list button {
+    color: rgba(var(--default-color-rgb), 0.8);
+    background-color: rgba(var(--default-color-rgb), 0.04);
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .service-details .services-list button:first-child {
+    margin-top: 0;
+  }
+  
+  .service-details .services-list button i {
+    font-size: 16px;
+    margin-right: 8px;
+    color: var(--accent-color);
+  }
+  
+  .service-details .services-list button.active {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+  }
+  
+  .service-details .services-list button.active i {
+    color: var(--contrast-color);
+  }
+  
+  .service-details .services-list button:hover {
+    background-color: rgba(var(--accent-color-rgb), 0.05);
+    color: var(--accent-color);
+  }
+  
+  .service-details .download-catalog a {
+    color: var(--default-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: 0.3s;
+    border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
+  }
+  
+  .service-details .download-catalog a:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  
+  .service-details .download-catalog a:last-child {
+    padding-bottom: 0;
+  }
+  
+  .service-details .download-catalog a i {
+    font-size: 24px;
+    margin-right: 8px;
+    color: var(--accent-color);
+  }
+  
+  .service-details .download-catalog a:hover {
+    color: var(--accent-color);
+  }
+  
+  .service-details .help-box {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    margin-top: 30px;
+    padding: 30px 15px;
+  }
+  
+  .service-details .help-box .help-icon {
+    font-size: 48px;
+  }
+  
+  .service-details .help-box h4,
+  .service-details .help-box a {
+    color: var(--contrast-color);
+  }
+  
+  .service-details .services-img {
+    margin-bottom: 20px;
+  }
+  
+  .service-details h3 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  .service-details p {
+    font-size: 15px;
+  }
+  
+  .service-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  .service-details ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-details ul i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: var(--accent-color);
+  }
+
+
+/*--------------------------------------------------------------
+# Page Title & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+    color: var(--default-color);
+    background-color: var(--background-color);
+  }
+  
+  .page-title .heading {
+    padding: 60px 0;
+    border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
+  }
+  
+  .page-title .heading h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+  
+  .page-title nav {
+    background-color: rgba(var(--sections-bg), 0.05);
+    padding: 25px 0;
+  }
+  
+  .page-title nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .page-title nav ol li+li {
+    padding-left: 10px;
+  }
+  
+  .page-title nav ol li+li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(var(--default-color-rgb), 0.3);
+  }
