@@ -5,7 +5,7 @@ var prodDiv = document.getElementById('prod-div');
 var tituloProd = document.getElementById('titulo-prod');
 var spanMarcas = document.getElementById('span-marcas');
 var prodDivDesc = document.querySelector('.prod-div-desc');
-let productos= [];
+let productos = [];
 
 let i = 0;
 //Carrusel clientes//
@@ -20,7 +20,10 @@ const swiper = new Swiper('.swiper', {
 //Funciones seccion productos//
 
 function insertarDatos(productos) {
- console.log(productos);
+  console.log(productos);
+
+  // Limpiar el contenido anterior
+  prodDivDesc.innerHTML = '';
 
   // Insertar título del primer producto
   tituloProd.textContent = productos.descripcion.titulo;
@@ -31,6 +34,8 @@ function insertarDatos(productos) {
   // Insertar secciones de descripción del primer producto
   var secciones = productos.descripcion.secciones; // Secciones del primer producto
   secciones.forEach(function (seccion) {
+    var hr= document.createElement('hr');
+
     var seccionDiv = document.createElement('div');
     seccionDiv.classList.add('seccion');
 
@@ -45,11 +50,12 @@ function insertarDatos(productos) {
     });
 
     seccionDiv.appendChild(tituloSeccion);
+    seccionDiv.appendChild(hr);
     seccionDiv.appendChild(contenidoSeccion);
 
     prodDivDesc.appendChild(seccionDiv);
   });
-  
+
 }
 
 
@@ -62,7 +68,7 @@ fetch('./descProd.json')
     if (!response.ok) {
       throw new Error('Ocurrió un error al obtener el archivo JSON');
     }
-    
+
     // Parsear la respuesta JSON
     return response.json();
   })
@@ -71,7 +77,7 @@ fetch('./descProd.json')
     productos = data;
     // Hacer algo con la variable, como imprimir en la consola
     console.log(productos);
-    
+
   })
   .catch(error => {
     // Capturar errores de la solicitud o del procesamiento JSON
@@ -81,27 +87,27 @@ fetch('./descProd.json')
 
 
 // botones categorias //
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Agregar evento click a todos los botones dentro de "services-list"
   var buttons = document.querySelectorAll('.services-list button');
-  buttons.forEach(function(button) {
-      button.addEventListener('click', function() {
-          console.log(greet);
-          greet.classList.add('d-none');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      console.log(greet);
+      greet.classList.add('d-none');
 
-          // Obtener el ID del botón clickeado
-          var id = button.id;
-          // Buscar el objeto en el arreglo de productos con el ID coincidente
-          var productoEncontrado = productos.find(function(producto) {
-              return producto.id === id;
-          });
-          // Verificar si se encontró el producto
-          if (productoEncontrado) {
-              // Llamar a la función insertarDatos con el producto encontrado
-              insertarDatos(productoEncontrado);
-          } else {
-              console.error('No se encontró ningún producto con el ID:', id);
-          }
+      // Obtener el ID del botón clickeado
+      var id = button.id;
+      // Buscar el objeto en el arreglo de productos con el ID coincidente
+      var productoEncontrado = productos.find(function (producto) {
+        return producto.id === id;
       });
+      // Verificar si se encontró el producto
+      if (productoEncontrado) {
+        // Llamar a la función insertarDatos con el producto encontrado
+        insertarDatos(productoEncontrado);
+      } else {
+        console.error('No se encontró ningún producto con el ID:', id);
+      }
+    });
   });
 });
