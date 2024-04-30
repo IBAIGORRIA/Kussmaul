@@ -11,7 +11,7 @@ var preguntas = document.getElementById('preguntas');
 const nombreEsp = document.getElementById("nombreEsp");
 const telEsp = document.getElementById("telEsp");
 const mailEsp = document.getElementById("mailEsp");
-
+const fondoDesc = document.getElementById("fondoDesc");
 
 
 
@@ -35,10 +35,34 @@ function insertarDatos(productos) {
   // Limpiar el contenido anterior
   prodDivDesc.innerHTML = '';
 
+  //Agregar fondo 
+  
+
+
+  console.log(productos.img);
+  var imageUrl = productos.img;
+  console.log(imageUrl);
+  fondoDesc.style.backgroundImage = `url(${imageUrl})`;
+  fondoDesc.style.height = '200px';
+  fondoDesc.style.backgroundPosition = 'center';
+  fondoDesc.style.backgroundRepeat = 'no-repeat';
+  // Crear una nueva imagen en JavaScript y cargar la imagen de fondo
+  var tempImg = new Image();
+  tempImg.src = imageUrl;
+// Esperar a que la imagen se cargue para obtener su ancho
+  tempImg.onload = function() {
+    // Obtener el ancho de la imagen de fondo
+    var anchoImagen = tempImg.width;
+
+    // Establecer el ancho del contenedor fondoDesc igual al ancho de la imagen
+    fondoDesc.style.width = anchoImagen + 'px';
+    }
+
+
   // Insertar título del primer producto
   tituloProd.textContent = productos.descripcion.titulo;
 
-  //mostrar el p
+  //Mostrar el p
   pDist.classList.remove("d-none");
 
   // Insertar marcas del primer producto

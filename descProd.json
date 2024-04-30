@@ -1,7 +1,7 @@
     [
         {
             "id": "cintas",
-            "img": "./assets/productos/home_cinta_transportadora.jpg",
+            "img": "./assets/img/productos/home_cinta_transportadora.jpg",
             "descripcion": {
                 "titulo": "CINTAS TRANSPORTADORAS",
                 "marcas": "Dunlop Argentina, Continental y Kapher ConveyorBelt, marcas líderes en el mercado.",
@@ -45,6 +45,7 @@
         },
         {
             "id": "seguridad",
+            "img": "./assets/img/productos/seguridad.jpg",
             "descripcion": {
                 "titulo": "SEGURIDAD INDUSTRIAL",
                 "marcas": "3M, MSA, Boris, Caran, Fravida, Ombu, Geo, Pampero, Calfort.",
@@ -168,6 +169,7 @@
         },
         {
             "id": "otros",
+            "img": "./assets/img/productos/home_vulcanizado.jpg",
             "descripcion": {
                 "titulo": "PRODUCTOS GENERALES",
                 "marcas": "Continental, Dayco, Diemer, Dunlop Argentina, Gates, Lockhart, Optibelt.",
@@ -237,6 +239,7 @@
         },
         {
             "id": "khapler",
+            "img": "./assets/img/productos/home_kapher.png",
             "descripcion": {
                 "titulo": "PRODUCTOS KAPHER",
                 "marcas": "Fabricacion propia.",
