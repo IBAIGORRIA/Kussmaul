@@ -42,6 +42,7 @@ function insertarDatos(productos) {
   console.log(productos.img);
   var imageUrl = productos.img;
   console.log(imageUrl);
+  fondoDesc.classList.remove("d-none");
   fondoDesc.style.backgroundImage = `url(${imageUrl})`;
   fondoDesc.style.height = '200px';
   fondoDesc.style.backgroundPosition = 'center';
