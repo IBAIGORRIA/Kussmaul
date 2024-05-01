@@ -158,84 +158,10 @@ section {
     content: normal;
 }
 
-/*--------------------------------------------------------------
-  # Scroll top button
-  --------------------------------------------------------------*/
-.scroll-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: -15px;
-    z-index: 99999;
-    background: var(--color-secondary);
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    transition: all 0.4s;
-}
-
-.scroll-top i {
-    font-size: 24px;
-    color: #fff;
-    line-height: 0;
-}
-
-.scroll-top:hover {
-    background: rgba(248, 90, 64, 0.8);
-    color: #fff;
-}
-
-.scroll-top.active {
-    visibility: visible;
-    opacity: 1;
-    bottom: 15px;
-}
 
 /*--------------------------------------------------------------
-  # Preloader
+  # 
   --------------------------------------------------------------*/
-#preloader {
-    position: fixed;
-    inset: 0;
-    z-index: 999999;
-    overflow: hidden;
-    background: #fff;
-    transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #fff;
-    border-color: var(--color-primary) transparent var(--color-primary) transparent;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
-}
-
 @media (max-width: 992px) {
     #mision-img {
         display: none !important;
@@ -266,7 +192,7 @@ section {
     color: var(--color-secondary);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
 
     .topbar .contact-info i a,
     .topbar .contact-info i span {
@@ -459,15 +385,6 @@ section {
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1600px) {
-    .navbar .dropdown .dropdown ul {
-        left: -90%;
-    }
-
-    .navbar .dropdown .dropdown:hover>ul {
-        left: -100%;
-    }
-}
 
 @media (min-width: 1280px) {
 
@@ -924,109 +841,24 @@ section {
     font-size: 14px;
 }
 
-.contact .info-item:hover i {
+.contact .info-item a {
+    text-decoration: none;
+    color: rgba(var(--light), 1)
+}
+
+
+.contact .info-item:hover .icon-div {
     background: #fff;
     color: var(--dark);
 }
 
-.contact .php-email-form {
-    width: 100%;
-    height: 100%;
+.contact .info-container .flecha-dir{
+    width: 30px;
+    height: 30px;
+}
+.contact .map-link:hover .bi.bi-arrow-bar-right {
     background: #fff;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 0 10px 10px 0;
-}
-
-.contact .php-email-form .form-group {
-    padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #df1529;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #059652;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid var(--color-bg-primary);
-    border-top-color: #fff;
-    animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-    padding: 12px 15px;
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-    border-color: var(--color-bg-secondary);
-}
-
-.contact .php-email-form textarea {
-    padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-    background: rgba(68, 117, 5, 0.776);
-    border: 0;
-    padding: 14px 45px;
-    color: #000000;
-    transition: 0.4s;
-    border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-    background: rgba(0, 131, 116, 0.8);
-}
-
-@keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    color: var(--dark);
 }
 
 /*--------------------------------------------------------------
@@ -1111,11 +943,6 @@ section {
     .hero h2 {
         font-size: 36px;
     }
-
-    .hero .btn-get-started,
-    .hero .btn-watch-video {
-        font-size: 14px;
-    }
 }
 
 .hero .icon-boxes {
@@ -1151,6 +978,7 @@ section {
     text-align: center;
 }
 
+
 .hero .icon-box .title {
     font-weight: 700;
     margin-bottom: 15px;
@@ -1181,6 +1009,18 @@ section {
     color: #fff;
 }
 
+@media (max-width: 767px) {
+    .hero .icon-box {
+        padding: 30px;
+        display: flex !important;
+    }
+    .hero .icon-box .title {
+        font-size: 25px; /* Tamaño de fuente en dispositivos grandes */
+    }
+    .hero .icon-box .icon {
+        font-size: 25px; /* Tamaño de icono en dispositivos pequeños */
+    }
+}
 
 /*--------------------------------------------------------------
   # Footer

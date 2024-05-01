@@ -13,7 +13,10 @@ const telEsp = document.getElementById("telEsp");
 const mailEsp = document.getElementById("mailEsp");
 const fondoDesc = document.getElementById("fondoDesc");
 
+var mapLinks = document.querySelectorAll('.map-link');
 
+const rosarioMapURL = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.602027273393!2d-60.6671376!3d-32.9338309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab53c0b55f25%3A0x55c112cd3fa347bc!2sIng.%20Carlos%20Kussmaul!5e0!3m2!1ses!2sar!4v1714525936134!5m2!1ses!2sar";
+const cordobaMapURL = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13363.629178996152!2d-64.3535!3d-33.1378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2001c1422cd29%3A0x223dab466ac661c6!2sIngeniero%20Kussmaul%20SA!5e0!3m2!1ses!2sar!4v1714526172966!5m2!1ses!2sar";
 
 let productos = [];
 let i = 0;
@@ -36,7 +39,7 @@ function insertarDatos(productos) {
   prodDivDesc.innerHTML = '';
 
   //Agregar fondo 
-  
+
 
 
   console.log(productos.img);
@@ -50,14 +53,14 @@ function insertarDatos(productos) {
   // Crear una nueva imagen en JavaScript y cargar la imagen de fondo
   var tempImg = new Image();
   tempImg.src = imageUrl;
-// Esperar a que la imagen se cargue para obtener su ancho
-  tempImg.onload = function() {
+  // Esperar a que la imagen se cargue para obtener su ancho
+  tempImg.onload = function () {
     // Obtener el ancho de la imagen de fondo
     var anchoImagen = tempImg.width;
 
     // Establecer el ancho del contenedor fondoDesc igual al ancho de la imagen
     fondoDesc.style.width = anchoImagen + 'px';
-    }
+  }
 
 
   // Insertar título del primer producto
@@ -167,4 +170,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
 });
+
+  // Itera sobre cada enlace y añade un listener de evento para cada uno
+  mapLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault(); // Evita que se realice la acción por defecto del enlace
+      var mapSrc;
+      // Comprueba si es el enlace de Rosario o Córdoba y establece la URL correspondiente
+      if (this.textContent.includes('Rosario')) {
+        mapSrc = rosarioMapURL;
+      } else if (this.textContent.includes('Córdoba')) {
+        mapSrc = cordobaMapURL;
+      }
+      document.getElementById('map').src = mapSrc; // Actualiza la propiedad 'src' del iframe con la URL correspondiente
+    });
+  });
+
+

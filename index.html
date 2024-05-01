@@ -30,11 +30,11 @@
 
 
 
-    
-    
+
+
 </head>
 
-<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+<body>
     <!-- ======HEADER============= -->
     <section id="topbar" class="topbar d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
@@ -65,7 +65,7 @@
                     <li><a href="#about" class="">Nosotros</a></li>
                     <li><a href="#services">Productos</a></li>
                     <li><a href="#team" class="">Nuestro equipo</a></li>
-                    <li><a href="#contact" class="">Ecuéntrenos</a></li>
+                    <li><a href="#contact" class="">Ubicación</a></li>
                 </ul>
             </nav>
 
@@ -87,36 +87,38 @@
 
         <div class="icon-boxes position-relative">
             <div class="container position-relative">
-                <div class="row gy-4 mt-5">
-
-                    <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-easel"></i></div>
-                            <h4 class="title"><a href="#about" class=" ">Nosotros</a></h4>
+                <div class="row gy-4 mt-5"><!-- Eliminé la clase 'align-items-center' de aquí -->
+                    <div class="col-xl-3 col-md-3 col-6 mb-3 mb-sm-0">
+                        <div class="icon-box d-block align-items-center justify-content-between">
+                            <!-- Añadí  d-block' y 'align-items-center' aquí -->
+                            <div class="icon"><i class="bi bi-easel"></i> </div>
+                            <h4 class="title"><a href="#about" class=""> Nosotros</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
-                    <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box">
+                    <div class="col-xl-3 col-md-3 col-6 mb-3 mb-sm-0">
+                        <div class="icon-box d-block align-items-center justify-content-between">
+                            <!-- Añadí  d-block' y 'align-items-center' aquí -->
                             <div class="icon"><i class="bi bi-headset-vr"></i></div>
-                            <h4 class="title"><a href="#services" class=" ">Nuestros Productos</a></h4>
+                            <h4 class="title"><a href="#services" class="">Nuestros Productos</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
-                    <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box">
+                    <div class="col-xl-3 col-md-3 col-6 mb-3 mb-sm-0">
+                        <div class="icon-box d-block align-items-center justify-content-between">
+                            <!-- Añadí  d-block' y 'align-items-center' aquí -->
                             <div class="icon"><i class="bi bi-people-fill"></i></div>
-                            <h4 class="title"><a href="#team" class=" ">Nuestro Equipo</a></h4>
+                            <h4 class="title"><a href="#team" class="">Nuestro Equipo</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
-                    <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon-box">
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <div class="icon-box d-block align-items-center justify-content-between">
+                            <!-- Añadí 'd-flex' y 'align-items-center' aquí -->
                             <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                            <h4 class="title"><a href="#contact" class=" ">Encuéntrenos</a></h4>
+                            <h4 class="title"><a href="#contact" class="">Ubicación</a></h4>
                         </div>
                     </div><!--End Icon Box -->
-
                 </div>
             </div>
         </div>
@@ -126,7 +128,7 @@
     <main id="main">
         <!-- Kussmaul-->
         <section id="about" class="about">
-            <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="container ">
                 <div class="section-header">
                     <h2>NUESTRA TRAYECTORIA</h2>
                     <p>Somos una empresa que desarrolla actividades comerciales dentro del rubro del caucho y plásticos
@@ -196,7 +198,7 @@
         </section>
         <!-- Banner PROVEEDORES posible cambio a Clientes queda mejor -->
         <section id="clients" class="clients">
-            <div class="container aos-init aos-animate" data-aos="zoom-out">
+            <div class="container  ">
                 <div class="clients-slider swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
 
                     <div class="swiper-wrapper align-items-center" id="" aria-live="off"
@@ -230,24 +232,25 @@
         </section>
         <!-- Productos -->
         <section id="services" class="services sections-bg">
-            <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="container  ">
 
                 <div class="section-header">
                     <h2>Nuestros productos</h2>
                     <p>Estas son nuestras principales categorías</p>
                 </div>
 
-                <div class="row gy-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4  ">
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="cintas">
-                            <div class="container bg-light w-10 p-2 bg-opacity-50"><a href="./productsdet.html" class=" ">
+                            <div class="container bg-light w-10 p-2 bg-opacity-50"><a href="./productsdet.html"
+                                    class=" ">
                                     <h3>Cintas transportadoras</h3>
                                 </a></div>
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="seg-ind">
                             <div class="container bg-light p-2 bg-opacity-50">
                                 <a href="./productsdet.html" class=" ">
@@ -257,7 +260,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="mangueras">
                             <div class="container bg-light p-2 bg-opacity-50">
                                 <a href="./productsdet.html" class=" ">
@@ -267,7 +270,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="correas">
                             <div class="container bg-light p-2 bg-opacity-50">
                                 <a href="./productsdet.html" class=" ">
@@ -277,7 +280,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="emp-vul">
                             <div class="container bg-light p-2 bg-opacity-50">
                                 <a href="./productsdet.html" class=" ">
@@ -287,7 +290,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4  col-md-4">
                         <div class="service-item d-flex align-items-end" id="kapher">
                             <div class="container bg-light p-2 bg-opacity-50">
                                 <a href="./productsdet.html" class=" ">
@@ -310,7 +313,7 @@
                 </div>
                 <!-- Cartas -->
                 <div class="row gy-4">
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Liliana Monaco</h5>
@@ -324,7 +327,7 @@
                     </div>
                     <!-- Fin Carta -->
 
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Walter Vicario</h5>
@@ -338,7 +341,7 @@
                     </div>
                     <!-- Fin Carta -->
 
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Salome Rigato</h5>
@@ -352,7 +355,7 @@
                     </div>
                     <!-- Fin Carta -->
 
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Marta Fraile</h5>
@@ -366,7 +369,7 @@
                     </div>
                     <!-- Fin Carta -->
 
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Romina Montana</h5>
@@ -380,7 +383,7 @@
                     </div>
                     <!-- Fin Carta -->
 
-                    <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4  col-md-4 d-flex justify-content-center ">
                         <div class="card member col-9">
                             <div class="card-body">
                                 <h5 class="card-title">M. Belén Ribba</h5>
@@ -411,36 +414,43 @@
 
                         <div class="info-container d-flex flex-column align-items-center justify-content-center">
                             <div class="info-item d-flex">
-                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                <i class="bi bi-geo-alt flex-shrink-0 icon-div"></i>
                                 <div>
-                                    <h3>Ubicacion:</h3>
+                                    <h3>Ubicación:</h3>
                                     <h4>Rosario</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p><a href="#contact" class="map-link"><i
+                                                class="bi bi-arrow-bar-right flecha-dir"></i>Salta 3350, S2000 Rosario,
+                                            Santa Fe</a> </p>
                                     <hr>
                                     <h4>Río Cuarto</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p><a href="#contact" class="map-link"><i
+                                                class="bi bi-arrow-bar-right flecha-dir"></i>Av. Amadeo Sabattini 2107,
+                                            X5800 Río Cuarto, Córdoba</a></p>
                                 </div>
                             </div>
                             <!-- Fin Info Item -->
 
                             <div class="info-item d-flex">
-                                <i class="bi bi-envelope flex-shrink-0"></i>
+                                <i class="bi bi-envelope flex-shrink-0 icon-div"></i>
                                 <div>
                                     <h4>Email:</h4>
-                                    <p>info@example.com</p>
+                                    <p><a href="mailto:kussmaul@kussmaul.com.ar">kussmaul@kussmaul.com.ar</a></p>
                                 </div>
                             </div><!-- Fin Info Item -->
 
-                            <div class="info-item d-flex">
-                                <i class="bi bi-phone flex-shrink-0"></i>
-                                <div>
-                                    <h4>Teléfono:</h4>
-                                    <p>+54 341-XXXXXXX </p>
-                                </div>
+                            <div class="info-item d-flex justify-content-between">
+                                <a href="tel:+543414391091">
+                                    <div><i class="bi bi-phone flex-shrink-0 icon-div"></i>
+
+                                            <h4>Teléfono:</h4>
+                                            <p>+54 341 439-1091</p>
+
+                                    </div>
+                                </a>
                             </div><!-- Fin Info Item -->
 
                             <div class="info-item d-flex">
-                                <i class="bi bi-clock flex-shrink-0"></i>
+                                <i class="bi bi-clock flex-shrink-0 icon-div"></i>
                                 <div>
                                     <h4>Horarios:</h4>
                                     <p>Lun-Vie: 8.00AM - 17.00PM</p>
@@ -451,32 +461,10 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Nombre" required="">
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Correo Electrónico" required="">
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Asunto" required="">
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="7" placeholder="Mensaje"
-                                    required=""></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Cargando</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Tu correo ha sido enviado. Muchas gracias, responderemos a la brevedad!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Enviar Mensaje!</button></div>
-                        </form>
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.602027273393!2d-60.6671376!3d-32.9338309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab53c0b55f25%3A0x55c112cd3fa347bc!2sIng.%20Carlos%20Kussmaul!5e0!3m2!1ses!2sar!4v1714525936134!5m2!1ses!2sar"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div><!-- End Contact Form -->
 
                 </div>
@@ -524,7 +512,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    
+
 
                 </div>
 
