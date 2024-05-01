@@ -64,7 +64,7 @@ section {
     background-color: var(--sections-bg);
 }
 
-.section-header {
+.section-header:not(:last-child) {
     text-align: center;
     padding-bottom: 60px;
 }
@@ -225,7 +225,7 @@ section {
     transition: all 0.5s;
     z-index: 997;
     height: 90px;
-    background-color: rgba(237, 242, 94, 0.3);
+    background-color: rgba(237, 242, 94, 0.8);
 }
 
 .header.sticked {
@@ -765,16 +765,8 @@ section {
     justify-content: space-around;
 }
 
-.team .member .social a {
-    color: #a2a2a2;
-    transition: 0.3s;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #bbbbbb;
+.team .member a {
+    font-size: 0.98rem;
 }
 
 .team .member .social a:hover {
@@ -852,10 +844,11 @@ section {
     color: var(--dark);
 }
 
-.contact .info-container .flecha-dir{
+.contact .info-container .flecha-dir {
     width: 30px;
     height: 30px;
 }
+
 .contact .map-link:hover .bi.bi-arrow-bar-right {
     background: #fff;
     color: var(--dark);
@@ -1014,11 +1007,15 @@ section {
         padding: 30px;
         display: flex !important;
     }
+
     .hero .icon-box .title {
-        font-size: 25px; /* Tamaño de fuente en dispositivos grandes */
+        font-size: 25px;
+        /* Tamaño de fuente en dispositivos grandes */
     }
+
     .hero .icon-box .icon {
-        font-size: 25px; /* Tamaño de icono en dispositivos pequeños */
+        font-size: 25px;
+        /* Tamaño de icono en dispositivos pequeños */
     }
 }
 
@@ -1069,11 +1066,6 @@ section {
     transition: 0.3s;
 }
 
-.footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
-}
-
 .footer h4 {
     font-size: 16px;
     font-weight: bold;
@@ -1121,22 +1113,8 @@ section {
     color: #fff;
 }
 
-.footer .footer-contact p {
-    line-height: 26px;
-}
-
 .footer .copyright {
     text-align: center;
-}
-
-.footer .credits {
-    padding-top: 4px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.footer .credits a {
-    color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1170,7 +1148,7 @@ section {
     padding: 12px 15px;
     margin-top: 15px;
     transition: 0.3s;
-    
+
 }
 
 .service-details .services-list button:first-child {
@@ -1185,18 +1163,14 @@ section {
 
 .service-details .services-list button.active {
     color: var(--light);
-    background-color: rgba(rgba(237, 242, 94, 0.3), 0.05);;
+    background-color: rgba(rgba(237, 242, 94, 0.3), 0.05);
+    ;
 }
 
 .service-details .services-list button.active i {
     color: var(--light);
 }
-/*
-.service-details .services-list button:hover {
-    background-color: rgba(var(--accent-color-rgb), 0.05);
-    color: var(--accent-color);
-}
-*/
+
 .service-details .download-catalog a {
     color: var(--default-color);
     display: flex;
@@ -1236,8 +1210,11 @@ section {
 .service-details .help-box .help-icon {
     font-size: 48px;
 }
+.service-details .help-box p {
+    font-size: 18px;
+}
 
-.service-details .fondoDesc{
+.service-details .fondoDesc {
     padding: 40px;
     height: 100%;
     border-radius: 10px;
@@ -1279,9 +1256,21 @@ section {
     color: var(--accent-color);
 }
 
+@media (max-width: 991px) {
+    .service-details #preguntas {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .service-details .preguntas {
+        display: none !important;
+    }
+}
+
 
 /*--------------------------------------------------------------
-# Page Title & Breadcrumbs
+# Page Title & Breadcrumbs PAGINA PRODUCT
 --------------------------------------------------------------*/
 .page-title {
     color: var(--default-color);
@@ -1303,6 +1292,7 @@ section {
     background-color: rgba(var(--sections-bg), 0.05);
     padding: 25px 0;
 }
+
 
 .page-title nav ol {
     display: flex;
