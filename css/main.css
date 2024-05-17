@@ -604,27 +604,27 @@ section {
 }
 
 .services #cintas {
-    background-image: url("./assets/img/productos/home_cinta_transportadora.jpg");
+    background-image: url("../assets/img/productos/home_cinta_transportadora.jpg");
 }
 
 .services #seg-ind {
-    background: url("./assets/img/productos/seguridad.jpg");
+    background: url("../assets/img/productos/seguridad.jpg");
 }
 
 .services #correas {
-    background: url("./assets/img/productos/home_correas.jpg");
+    background: url("../assets/img/productos/home_correas.jpg");
 }
 
 .services #mangueras {
-    background: url("./assets/img/productos/home_magueras.jpg");
+    background: url("../assets/img/productos/home_magueras.jpg");
 }
 
 .services #emp-vul {
-    background: url("./assets/img/productos/home_vulcanizado.jpg");
+    background: url("../assets/img/productos/home_vulcanizado.jpg");
 }
 
 .services #kapher {
-    background: url("./assets/img/Clientes/kapher.jpg");
+    background: url("../assets/img/Clientes/kapher.jpg");
 }
 
 
