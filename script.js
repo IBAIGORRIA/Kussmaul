@@ -27,6 +27,7 @@ var lastButton = null;
 
 const swiper = new Swiper('.swiper', {
   loop: true,
+  lazy: true,
   autoplay: true,
   slidesPerView: "3",
   height: "50%",
