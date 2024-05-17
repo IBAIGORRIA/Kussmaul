@@ -839,7 +839,7 @@ section {
 .hero {
     width: 100%;
     position: relative;
-    background: url("./assets/img/slider/slide1.jpg");
+    background: url("../assets/img/slider/slide1.jpg");
     padding: 60px 0 0px 0;
 
 }
