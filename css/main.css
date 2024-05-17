@@ -6,15 +6,15 @@
 
 /* Colors */
 :root {
-    --color-default: #222222;
-    --color-primary: #F2E966;
-    --color-secondary: #EDF25E;
-    --color-bg-primary: #403C01;
-    --color-bg-secondary: #8C8303;
-    --gray: #848486;
-    --dark: #1C140E;
-    --light: #FFFFFF;
-    --sections-bg: rgba(237, 242, 94, 0.3);
+    --color-default: rgb(34, 34, 34);
+    --color-primary: rgb(242, 233, 102);
+    --color-secondary:rgb(237, 242, 94);
+    --color-bg-primary: rgb(64, 60, 1);
+    --color-bg-secondary:rgb(140, 131, 3);
+    --gray: rgb(132, 132, 134);
+    --dark: rgb(28, 20, 14);
+    --light: rgb(255, 255, 255);
+    --sections-bg: rgb(237, 242, 94);
 }
 
 /* Smooth scroll behavior */
@@ -61,7 +61,7 @@ section {
 }
 
 .sections-bg {
-    background-color: var(--sections-bg);
+    background-color: rgba(var(--sections-bg), 0.3);
 }
 
 .section-header:not(:last-child) {
@@ -114,7 +114,7 @@ section {
 .breadcrumbs .page-header h2 {
     font-size: 56px;
     font-weight: 500;
-    color: #fff;
+    color: #000;
     font-family: var(--font-secondary);
 }
 
@@ -266,6 +266,7 @@ section {
         display: flex;
         list-style: none;
         align-items: center;
+        
     }
 
     .navbar li {
@@ -407,14 +408,15 @@ section {
         bottom: 0;
         transition: 0.3s;
         z-index: 9997;
+
     }
 
     .navbar ul {
         position: absolute;
         inset: 0;
-        padding: 50px 0 10px 0;
+        padding: 80px 0 10px 0;
         margin: 0;
-        background: rgba(0, 131, 116, 0.9);
+        background: rgba(237, 242, 94, 0.8);
         overflow-y: auto;
         transition: 0.3s;
         z-index: 9998;
@@ -425,18 +427,20 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
-        font-family: var(--font-primary);
-        font-size: 15px;
+        padding: 20px 20px;
+        font-size: 20px;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(var(--dark), 0.8);
         white-space: nowrap;
         transition: 0.3s;
+        border-bottom: solid 1px;
     }
+
+    
 
     .navbar a i,
     .navbar a:focus i {
-        font-size: 12px;
+        font-size: 20px;
         line-height: 0;
         margin-left: 5px;
     }
@@ -445,42 +449,12 @@ section {
     .navbar .active,
     .navbar .active:focus,
     .navbar li:hover>a {
-        color: #fff;
+        color: rgba(var(--dark), 0.8);
     }
 
-    .navbar .getstarted,
-    .navbar .getstarted:focus {
-        background: var(--color-primary);
-        padding: 8px 20px;
-        border-radius: 4px;
-        margin: 15px;
-        color: #fff;
-    }
-
-    .navbar .getstarted:hover,
-    .navbar .getstarted:focus:hover {
-        color: #fff;
-        background: rgba(0, 131, 116, 0.8);
-    }
-
-    .navbar .dropdown ul,
-    .navbar .dropdown .dropdown ul {
-        position: static;
-        display: none;
-        padding: 10px 0;
-        margin: 10px 20px;
-        transition: all 0.5s ease-in-out;
-        background-color: #007466;
-        border: 1px solid #006459;
-    }
-
-    .navbar .dropdown>.dropdown-active,
-    .navbar .dropdown .dropdown>.dropdown-active {
-        display: block;
-    }
 
     .mobile-nav-show {
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--dark);
         font-size: 28px;
         cursor: pointer;
         line-height: 0;
@@ -490,7 +464,7 @@ section {
     }
 
     .mobile-nav-hide {
-        color: #fff;
+        color: var(--dark);
         font-size: 32px;
         cursor: pointer;
         line-height: 0;
@@ -513,7 +487,7 @@ section {
         content: "";
         position: fixed;
         inset: 0;
-        background: var(--color-bg-secondary);
+        background: transparent ;
         z-index: 9996;
     }
 
@@ -628,27 +602,27 @@ section {
 }
 
 .services #cintas {
-    background-image: url(/assets/img/productos/home_cinta_transportadora.jpg);
+    background-image: url(assets/img/productos/home_cinta_transportadora.jpg);
 }
 
 .services #seg-ind {
-    background: url(/assets/img/productos/seguridad.jpg);
+    background: url(assets/img/productos/seguridad.jpg);
 }
 
 .services #correas {
-    background: url(/assets/img/productos/home_correas.jpg);
+    background: url(assets/img/productos/home_correas.jpg);
 }
 
 .services #mangueras {
-    background: url(/assets/img/productos/home_magueras.jpg);
+    background: url(assets/img/productos/home_magueras.jpg);
 }
 
 .services #emp-vul {
-    background: url(/assets/img/productos/home_vulcanizado.jpg);
+    background: url(assets/img/productos/home_vulcanizado.jpg);
 }
 
 .services #kapher {
-    background: url(/assets/img/Clientes/kapher.jpg);
+    background: url(assets/img/Clientes/kapher.jpg);
 }
 
 
@@ -727,20 +701,12 @@ section {
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
-.team .member img {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.team .member .member-content {
-    padding: 0 20px 30px 20px;
-}
 
 .team .member h4 {
     font-weight: 700;
     margin-top: 16px;
-    margin-bottom: 2px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .team .member span {
@@ -854,13 +820,24 @@ section {
     color: var(--dark);
 }
 
+#map {
+    max-width: 100%;
+    height: 100%;
+}
+@media (max-width: 991px) {
+    #map {
+        max-width: 100%;
+        height: 500px;
+    }
+}
+
 /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
 .hero {
     width: 100%;
     position: relative;
-    background: url(/assets/img/slider/slide1.jpg);
+    background: url(assets/img/slider/slide1.jpg);
     padding: 60px 0 0px 0;
 
 }
@@ -977,6 +954,13 @@ section {
     margin-bottom: 15px;
     font-size: 24px;
 }
+@media (max-width: 991px) {
+    .hero .icon-box .title {
+            font-size: 17px;
+    }
+}
+
+
 
 .hero .icon-box .title a {
     color: var(--color-default);
@@ -1289,7 +1273,7 @@ section {
 }
 
 .page-title nav {
-    background-color: rgba(var(--sections-bg), 0.05);
+    background-color: rgba(rgba(var(--sections-bg), 0.3), 0.05);
     padding: 25px 0;
 }
 

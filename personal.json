@@ -1,0 +1,39 @@
+[
+    {
+      "nombre": "Liliana Monaco",
+      "departamento": "Cintas Transportadoras",
+      "telefono": "+54 341-3752721",
+      "email": "lmonaco@kussmaul.com.ar"
+    },
+    {
+      "nombre": "Walter Vicario",
+      "departamento": "Seguridad Industrial",
+      "telefono": "+54 341-5311215",
+      "email": "wvicario@kussmaul.com.ar"
+    },
+    {
+        "nombre": "Salome Rigato",
+        "departamento": "Mercadería General",
+        "telefono": "+54 341-6575708",
+        "email": "srigato@kussmaul.com.ar"
+      },
+      {
+        "nombre": "Marta Fraile",
+        "departamento": "Kapher Agrícola",
+        "telefono": "+54 341-6575713",
+        "email": "mfraile@kussmaul.com.ar"
+      },
+      {
+        "nombre": "Romina Montana",
+        "departamento": "Cobranza",
+        "telefono": "+54 341-6575478",
+        "email": "rmontana@kussmaul.com.ar"
+      },
+      {
+        "nombre": "M.Belen Ribba",
+        "departamento": "Pago a Proveedores",
+        "telefono": "+54 341-3466204",
+        "email": "mribba@kussmaul.com.ar"
+      }
+  ]
+  

@@ -192,3 +192,96 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+
+  /// Menu Hamburguesa para celu
+   
+  const mobileNavShow = document.querySelector('.mobile-nav-show');
+  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+
+  //Coloca el listener para cada click
+  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      mobileNavToogle();
+    })
+  });
+
+  //Funcion para mostrar el menu desplegable y ocultar la hamburguesa
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavShow.classList.toggle('d-none');
+    mobileNavHide.classList.toggle('d-none');
+  }
+
+  ///
+
+  document.querySelectorAll('#navbar a').forEach(navbarlink => {
+
+    if (!navbarlink.hash) return;
+
+    let section = document.querySelector(navbarlink.hash);
+    if (!section) return;
+
+    navbarlink.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+
+  });
+
+    //Funcion para agregar la clase "activo" al elemento
+    //de la nav correspondiente mientras se scrollea
+
+    let navbarlinks = document.querySelectorAll('#navbar a');
+  
+    function navbarlinksActive() {
+      navbarlinks.forEach(navbarlink => {
+  
+        if (!navbarlink.hash) return;
+  
+        let section = document.querySelector(navbarlink.hash);
+        if (!section) return;
+  
+        let position = window.scrollY + 200;
+  
+        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+          navbarlink.classList.add('active');
+        } else {
+          navbarlink.classList.remove('active');
+        }
+      })
+    }
+    window.addEventListener('load', navbarlinksActive);
+    document.addEventListener('scroll', navbarlinksActive);
+
+   // Función para cargar y generar las cartas
+  function cargarCartas() {
+    fetch('personal.json')
+      .then(response => response.json())
+      .then(data => {
+        const cartasContainer = document.getElementById('cartas-container');
+        
+        data.forEach(carta => {
+          const cardHTML = `
+            <div class="col-xl-4 col-md-4 d-flex justify-content-center">
+              <div class="card member col-9">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">${carta.nombre}</h4>
+                  <p class="card-text">${carta.departamento}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item fw-bold"><a href="tel:${carta.telefono}"><i class="bi bi-phone"></i> ${carta.telefono}</a></li>
+                  <li class="list-group-item fw-bold"><a href="mailto:${carta.email}"><i class="bi bi-envelope"></i> ${carta.email}</a></li>
+                </ul>
+              </div>
+            </div>
+          `;
+          cartasContainer.innerHTML += cardHTML;
+        });
+      })
+      .catch(error => console.error('Error al cargar el JSON de personal:', error));
+  }
+
+  // Llamamos a la función para cargar las cartas al cargar la página
+  window.onload = cargarCartas;
