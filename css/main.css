@@ -604,7 +604,7 @@ section {
 }
 
 .services #cintas {
-    background-image: url(Kussmaul/assets/img/productos/home_cinta_transportadora.jpg);
+    background-image: url("../assets/img/productos/home_cinta_transportadora.jpg");
 }
 
 .services #seg-ind {
