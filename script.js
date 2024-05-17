@@ -42,7 +42,7 @@ function insertarDatos(productos) {
   prodDivDesc.innerHTML = '';
 
   var imageUrl = productos.img;
-  console.log(imageUrl);
+  
   //Estilizar fondo
   fondoDesc.classList.remove("d-none");
   fondoDesc.style.backgroundImage = `url(${imageUrl})`;
